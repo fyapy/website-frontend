@@ -1,0 +1,139 @@
+@import './normalize';
+// @import './animations';
+@import './nprogress';
+// @import '../libs/css/all.min';
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+*,
+*::before,
+*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+
+    scroll-behavior: smooth;
+    touch-action: manipulation;
+}
+
+body {
+    width: 100%;
+    letter-spacing: 0.4px;
+    overflow-x: hidden;
+    line-height: normal;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+
+    &.dimmed {
+        height: 100%;
+        width: 100%;
+        overflow: hidden !important;
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=number],
+input[type=url],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+button,
+a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    div[data-name="container"] {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    div[data-name="container"] {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 986px) {
+    div[data-name="container"] {
+        max-width: 890px;
+    }
+}
+
+@media (max-width: 914px) {
+    div[data-name="container"] {
+        max-width: 840px;
+    }
+}
+
+@media (max-width: 864px) {
+    div[data-name="container"] {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1200px) {
+    div[data-name="container"] {
+        max-width: 1838px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+#__next {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    > [data-name='app-content'] {
+        flex: 1;
+    }
+}
+
+.not-displaying-block {
+    display: none !important;
+}

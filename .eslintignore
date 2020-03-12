@@ -1,0 +1,13 @@
+serviceWorker.js
+config-overrides.js*
+next.config.js
+*.test.js
+*.conf.js
+*.mock.js
+build
+coverage
+deploy
+public
+scripts
+node_modules
+config

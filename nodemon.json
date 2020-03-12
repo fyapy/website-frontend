@@ -1,0 +1,14 @@
+{
+  "watch": [
+    ".babelrc",
+    ".env",
+    "locales/**/*.json",
+    "src/next.config.js",
+    "src/*.ts",
+    "public/locales/**/*.json"
+  ],
+  "ignore": ["locales/**/*.missing.json"],
+  "execMap": {
+    "ts": "cross-env NODE_ENV=develop ts-node --project tsconfig.server.json"
+  }
+}
