@@ -7,7 +7,7 @@ import 'dotenv/config'
 import nextI18next from './i18n'
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
-const PORT = 3000 || process.env.PORT
+const PORT = process.env.PORT || 3000
 const app = next({ dev: isDevelopment })
 const handle = app.getRequestHandler();
 
