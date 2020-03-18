@@ -2,8 +2,8 @@ import NextI18Next from 'next-i18next'
 import { isBrowser } from '../utils/selectors'
 
 const NextI18n = new NextI18Next({
-    defaultLanguage: 'ru',
-    otherLanguages: ['en'],
+    defaultLanguage: 'en',
+    otherLanguages: ['ru'],
     localePath: isBrowser ? 'locales' : 'public/locales',
     localeSubpaths: {
         ru: 'ru',
