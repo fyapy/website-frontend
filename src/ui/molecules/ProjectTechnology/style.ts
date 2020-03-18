@@ -93,4 +93,10 @@ export const StyledProject = styled.a`
     > ${Text} {
         margin-top: 10px;
     }
+
+    ${media.mobile} {
+        > img {
+            max-width: calc(100% - 20px);
+        }
+    }
 `

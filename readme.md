@@ -1,4 +1,4 @@
-# [[Ru.](https://amirabdullin.online/ru)][AmirAbdullin.Online](https://amirabdullin.online) source code: frontend
+# [[Ru.](https://portfolio.amirabdullin.online/ru)][AmirAbdullin.Online](https://portfolio.amirabdullin.online) source code: frontend
 
 ## Key ingredients
 
