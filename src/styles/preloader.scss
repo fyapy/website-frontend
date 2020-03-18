@@ -19,6 +19,9 @@
 .preloader {
     position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     z-index: 1000;
 
     width: 100%;
@@ -91,7 +94,7 @@
                 transform: translate(-43.2vw, -40vh) scale(.45);
 
                 @media (max-width: 768px) {
-                    transform: translate(0, -40vh) scale(.45);
+                    transform: translate(0, calc(-50vh + 68px)) scale(.45);
                 }
             }
         }

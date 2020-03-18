@@ -9,6 +9,7 @@ import {
 } from 'providers'
 import { PreloadingScreen } from 'ui/molecules'
 import { AppTemplate } from 'ui/templates'
+import { isDevelopment } from 'utils/selectors'
 
 import 'utils/nprogress'
 import 'styles/index.scss'
@@ -42,7 +43,7 @@ class App extends NextApp {
 
         return (
             <>
-                <PreloadingScreen />
+                {!isDevelopment && <PreloadingScreen />}
                 <AdaptiveProvider>
                     <SliderProvider>
                         <NavbarProvider>

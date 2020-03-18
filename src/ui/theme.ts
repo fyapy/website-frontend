@@ -12,6 +12,8 @@ export const color = {
 
     backgroundGray: '#1B1B1C',
     backgroundWhiteOpacity: 'rgba(255, 255, 255, .8)',
+
+    shadowBlackLight: 'rgba(0, 0, 0, .08)',
 }
 
 export type Color = keyof typeof color

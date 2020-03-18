@@ -7,10 +7,9 @@ export const PreloadingScreen: FC = () => {
 
     useEffect(() => {
         const interval = setInterval(() => setProgress(val => val < 100 ? val + 1 : val), 30)
-        setTimeout(() => {
-            setLoaded(true)
-            clearInterval(interval)
-        }, 3500)
+
+        setTimeout(() => setLoaded(true), 3500)
+        setTimeout(() => clearInterval(interval), 4500)
     }, [])
 
     return (

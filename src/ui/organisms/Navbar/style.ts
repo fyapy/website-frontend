@@ -124,7 +124,41 @@ export const StyledMenu = styled.div`
     }
 
     ${media.tablet} {
-        display: none;
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+
+        width: 100%;
+        height: 66px;
+        padding: 0;
+
+        align-items: initial;
+
+        background-color: ${color.white};
+        box-shadow: 0 -1px 4px ${color.shadowBlackLight};
+
+        use {
+            transition: fill .4s ease-in-out;
+        }
+        ${Text} {
+            transition: color .4s ease-in-out;
+        }
+        ${Icon.styledComponent} {
+            padding: 0;
+        }
+        > a {
+            padding: 9px 0 11px;
+
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-flow: column;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
     }
 `
 
