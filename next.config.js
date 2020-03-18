@@ -1,11 +1,14 @@
 const path = require('path')
+const webpack = require('webpack')
+const { parsed: localEnv } = require('dotenv').config()
 
 module.exports = {
-    webpack(config) {
+    webpack(config, { dev }) {
+        config.plugins.push(new webpack.EnvironmentPlugin(localEnv))
         config.resolve.modules.push(path.resolve(__dirname, 'src'))
 
-        config.module.rules.push(...[
-            {
+        if (dev) {
+            config.module.rules.push({
                 enforce: 'pre',
                 test: /\.ts$/,
                 exclude: /(node_modules)/,
@@ -18,8 +21,8 @@ module.exports = {
                     failOnWarning: true,
                     failOnError: true,
                 },
-            }
-        ])
+            })
+        }
 
         return config
     },

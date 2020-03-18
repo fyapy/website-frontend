@@ -1,7 +1,7 @@
 export const color = {
     primary: '#FFA500',
 
-    text: '#333',
+    text: '#232323',
 
     white: '#FFF',
     red: '#f23958',
@@ -9,6 +9,9 @@ export const color = {
 
     gray: '#29292B',
     black: '#0D0D0E',
+
+    backgroundGray: '#1B1B1C',
+    backgroundWhiteOpacity: 'rgba(255, 255, 255, .8)',
 }
 
 export type Color = keyof typeof color
@@ -76,4 +79,23 @@ export const media = {
     aboveMobile: makeMedia(screenSizes.mobile),
     aboveTablet: makeMedia(screenSizes.tablet),
     aboveComputer: makeMedia(screenSizes.computer),
+}
+
+export type Section = 'business' | 'work-process' | 'architecture' | 'design' | 'technology'
+
+export const getNavbarSection = (section: Section) => {
+    switch (section) {
+        case 'business':
+            return 'PROJECTS_HEAD_BENEFITS'
+        case 'work-process':
+            return 'PROJECTS_HEAD_WORK_PROCESS'
+        case 'architecture':
+            return 'PROJECTS_HEAD_ARCHITECTURE'
+        case 'design':
+            return 'PROJECTS_HEAD_DESIGN'
+        case 'technology':
+            return 'PROJECTS_HEAD_TECHNOLOGIES'
+        default:
+            return 'PROJECTS_HEAD_BENEFITS'
+    }
 }

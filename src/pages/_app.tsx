@@ -2,7 +2,12 @@ import React from 'react'
 import NextApp, { AppContext } from 'next/app'
 // import * as Sentry from '@sentry/browser'
 import { appWithTranslation } from 'i18n'
-import { AdaptiveProvider } from 'providers'
+import {
+    AdaptiveProvider,
+    SliderProvider,
+    NavbarProvider,
+} from 'providers'
+import { PreloadingScreen } from 'ui/molecules'
 import { AppTemplate } from 'ui/templates'
 
 import 'utils/nprogress'
@@ -14,11 +19,9 @@ class App extends NextApp {
     static async getInitialProps({ Component, ctx }: AppContext) {
 
         return {
-            pageProps: {
-                ...(Component.getInitialProps
-                    ? Component.getInitialProps(ctx)
-                    : {}),
-            },
+            pageProps: (Component.getInitialProps
+                ? Component.getInitialProps(ctx)
+                : {}),
         }
     }
 
@@ -38,11 +41,18 @@ class App extends NextApp {
         const { Component, pageProps } = this.props
 
         return (
-            <AdaptiveProvider>
-                <AppTemplate>
-                    <Component {...pageProps} />
-                </AppTemplate>
-            </AdaptiveProvider>
+            <>
+                <PreloadingScreen />
+                <AdaptiveProvider>
+                    <SliderProvider>
+                        <NavbarProvider>
+                            <AppTemplate>
+                                <Component {...pageProps} />
+                            </AppTemplate>
+                        </NavbarProvider>
+                    </SliderProvider>
+                </AdaptiveProvider>
+            </>
         )
     }
 }

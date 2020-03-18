@@ -1,0 +1,16 @@
+{
+    "MINING_HEAD_DESCRIPTION": "Development for mining platforms, for convenient monitoring and collecting \n statistics of mining processes, which allows you to view the structure and \n financial results of a mining pool, information about input and output operations\nof funds, and receive detailed information about the status of a mining pool.",
+    "MINING_BENEFITS_1_TITLE": "Control tools",
+    "MINING_BENEFITS_1_DESCRIPTION": "Monitoring the investment program in real time, viewing the history of operations.",
+    "MINING_BENEFITS_2_TITLE": "Scalability and security",
+    "MINING_BENEFITS_2_DESCRIPTION": "Scalability, high load, data security. A policy for distributing data access rights ensures their security.",
+    "MINING_BENEFITS_3_TITLE": "UX design",
+    "MINING_BENEFITS_3_DESCRIPTION": "Adaptive design, the ability to customize the platform for different types of customers.",
+    "MINING_BENEFITS_4_TITLE": "Time saving",
+    "MINING_BENEFITS_4_DESCRIPTION": "Payments are controlled by a separate system, facilitating regular and quick payments.",
+    "MINING_BENEFITS_5_TITLE": "Integration",
+    "MINING_BENEFITS_5_DESCRIPTION": "Possibility to integrate bots for convenient notification of found blocks, payments.",
+    "MINING_BENEFITS_6_TITLE": "Miner loyalty",
+    "MINING_BENEFITS_6_DESCRIPTION": "Trust is the foundation of successful cryptocurrency projects.",
+    "MINING_WORK_PROCESS": "We believe in the convenience of simple solutions. Using mining pools should be\nas easy as sending an emoticon. Maximum functionality. Even the standard \nmining pool offers the client many features. Mining should be \ncomfortable, useful, affordable and well protected."
+}
