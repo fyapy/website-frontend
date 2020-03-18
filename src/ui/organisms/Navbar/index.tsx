@@ -164,7 +164,7 @@ export const Navbar: FC = () => {
                         <a>
                             <Icon
                                 name="handshake"
-                                width="27px"
+                                width="30px"
                                 height="24px"
                                 fill={query.project === 'freelance'
                                     ? 'primary'
@@ -191,8 +191,8 @@ export const Navbar: FC = () => {
                         <a>
                             <Icon
                                 name="ethereum"
-                                width="27px"
-                                height="24px"
+                                width="15px"
+                                height="28px"
                                 fill={query.project === 'mining'
                                     ? 'primary'
                                     : 'text'}

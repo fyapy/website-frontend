@@ -144,6 +144,7 @@ export const StyledMenu = styled.div`
             transition: color .4s ease-in-out;
         }
         ${Icon.styledComponent} {
+            height: 28px;
             padding: 0;
         }
         > a {
