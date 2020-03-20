@@ -18,23 +18,25 @@
 
 .preloader {
     position: fixed;
+    bottom: 0;
     top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
     z-index: 1000;
 
     width: 100%;
     height: 100%;
 
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-
     opacity: 1;
     background-color: #fff;
 
+    &__wrapper {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        transform: translateY(calc(50vh - 90px));
+    }
     &__logo {
         transform: translate(0, 0) scale(1);
         transition: transform .4s ease-in-out;
@@ -91,10 +93,14 @@
                 transform: scale(.1);
             }
             &__logo {
-                transform: translate(-43.2vw, -40vh) scale(.45);
+                transform:
+                    translate(calc(-50vw + 134px), calc(-50vh + 81px))
+                    scale(.45);
 
                 @media (max-width: 768px) {
-                    transform: translate(0, calc(-50vh + 68px)) scale(.45);
+                    transform:
+                        translate(0, calc(-50vh + 68px))
+                        scale(.45);
                 }
             }
         }

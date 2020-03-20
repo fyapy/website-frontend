@@ -18,24 +18,26 @@ export const PreloadingScreen: FC = () => {
             id="preloader"
             data-loaded={loaded}
         >
-            <div className="preloader__logo">
-                <Icon
-                    name="logo"
-                    width="127px"
-                    height="129px"
-                    fill="text"
-                />
-            </div>
-            <div className="preloader__progress"></div>
-            <div className="preloader__counter">
-                {`${progress}`.split('').map((number, index) => (
+            <div className="preloader__wrapper">
+                <div className="preloader__logo">
                     <Icon
-                        key={index}
-                        name={`road-rage-${number}`}
-                        height="20px"
+                        name="logo"
+                        width="127px"
+                        height="129px"
                         fill="text"
                     />
-                ))}
+                </div>
+                <div className="preloader__progress"></div>
+                <div className="preloader__counter">
+                    {`${progress}`.split('').map((number, index) => (
+                        <Icon
+                            key={index}
+                            name={`road-rage-${number}`}
+                            height="20px"
+                            fill="text"
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     )
