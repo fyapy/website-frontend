@@ -43,7 +43,7 @@ class App extends NextApp {
 
         return (
             <>
-                {!isDevelopment && <PreloadingScreen />}
+                {(!isDevelopment || isDevelopment) && <PreloadingScreen />}
                 <AdaptiveProvider>
                     <SliderProvider>
                         <NavbarProvider>

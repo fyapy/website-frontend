@@ -39,7 +39,11 @@
     }
     &__logo {
         transform: translate(0, 0) scale(1);
-        transition: transform .4s ease-in-out;
+        transition: transform .8s ease-in-out;
+
+        @media (max-width: 768px) {
+            transition: transform .4s ease-in-out;
+        }
     }
     &__progress, &__counter {
         transform: scale(1);
@@ -94,7 +98,7 @@
             }
             &__logo {
                 transform:
-                    translate(calc(-50vw + 134px), calc(-50vh + 81px))
+                    translate(calc(-50vw + 132px), calc(-50vh + 3.3vh + 62px))
                     scale(.45);
 
                 @media (max-width: 768px) {
