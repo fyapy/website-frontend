@@ -22,11 +22,10 @@ const ProjectPage: NextPage = () => {
     }
 }
 
-ProjectPage.getInitialProps = ({ query }) => ({
+ProjectPage.getInitialProps = () => ({
     namespacesRequired: [
         'common',
         'projects',
-        query.project,
     ],
 })
 

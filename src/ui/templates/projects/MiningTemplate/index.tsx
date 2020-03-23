@@ -20,7 +20,7 @@ const sections: Section[] = [
 ]
 
 const MiningTemplate: FC = () => {
-    const { t } = useTranslation('mining')
+    const { t } = useTranslation('projects')
     const [activeSection, setActiveSection] = useState<Section | null>(null)
 
     const refs = useMemo(() => sections.reduce((

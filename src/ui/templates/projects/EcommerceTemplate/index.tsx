@@ -18,7 +18,7 @@ const sections: Section[] = [
 ]
 
 const EcommerceTemplate: FC = () => {
-    const { t, i18n } = useTranslation('e-commerce')
+    const { t, i18n } = useTranslation('projects')
     const [activeSection, setActiveSection] = useState<Section | null>(null)
 
     const refs = useMemo(() => sections.reduce((
